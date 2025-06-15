@@ -18,6 +18,35 @@
             Research
         </h1>
     </header>
+
+    <p>
+        I am interested in understanding the structure and behaviour of hadrons directly from the theory of quantum chromodynamics (QCD).
+        To see the importance of a solid understanding of Hadronic physics, let me mention a few physical sceneraios in which they play a key role:
+        <ul>
+            <li>Every atom in the universe! Protons and neutrons are examples of hadrons, and they are the building blocks of nuclei.</li>
+            <li>Nuclear reactions that could lead to cleaner energy sources! These are also fundamental to understand, say, the life-cycle of stars.</li>
+            <li>Neutron stars! These mysterious objects are of course mostly composed of neutrons.
+                But deep within them there may be an exotic form of matter known as the quark-gluon plasma.
+                Quarks and gluons are the constituent particles of all hadrons.</li>
+            <li>Neutrinoless double beta decay! The observation of this nuclear process would imply new physics beyond the current standard model of particle physics.
+                It would signal that neutrinos are Majorana.
+                This could be an explanation for the asymmetry between the amounts of matter and antimatter that we see in the universe (phew!).</li>
+            <li>Are there exotic hadrons?
+                For example, it may be that there are massive particles made mostly out of gluons, known as glueballs.
+                This is very intersting, considering that gluons are to the strong nuclear force as light is to electromagnetism.</li>
+        </ul>
+    </p>
+    <p>
+        However, QCD is a strongly interacting quantum field theory.
+        Therefore, the analytical tools we have available at the moment have not shown powerful enough to extract the information we need to understand the phenomena above.
+        I thus enlist the help of computers to help me study this theory.
+    </p>
+    <p>
+        If you think you might be interested in collaborating with me, do not hesitate to contact me at <a href = "mailto:ivan_burbano@berkeley.edu">ivan_burbano@berkeley.edu</a>.
+        I welcome everyone to reach out, including undergraduate students!
+    </p>
+
+
     <section>
         <h2>Introduction</h2>
         <p>
@@ -44,7 +73,7 @@
 
         <div class = "sourced_image">
             <img src="images/proton.jpg">
-            <span class = "source">Photo taken from <a href = "https://www.energy.gov/science/articles/how-did-proton-get-its-spin" target = "_blank">this article</a> of the Doe</span>
+            <span class = "source">Photo taken from <a href = "https://www.energy.gov/science/articles/how-did-proton-get-its-spin" target = "_blank">this article</a> of the DOE</span>
         </div>
 
         <p>
@@ -89,16 +118,36 @@
             My research is centered around solving this problem.
         </p>
 
-        <p>
-            More recently, big efforts have been done trying to understand real-time processes.
-            Amongst these, scattering is particularly important, for it is directly probed in collider experiments.
-            Accessing this information from Euclidean QCD is notoriously difficult, for the quantum real-time fluctuations are replaced by thermal ones in equilibrium.
-            I work in two methods that solve this problem.
-        </p>
     </section>
 
     <section>
         <h2>Traditional Lattice QCD</h2>
+        <p>
+            While hard, there are some scattering observables that can be obtained through the traditional methods of lattice QCD.
+            The methodology involved in this can be roughly split into two steps.
+            Let us briefly describe them.
+        </p>
+
+        <p>
+            At the heart of the first step lies the fact that quantum systems on a finite-volume, such as the ones we have access to through computers, must have discrete energy levels (e.g. the Bohr quantization condition for the hydrogen atom).
+            One must then find a connection between these discrete energies, as well as other stationary properties of the states associated to them, to the scattering observables of interest.
+            Once this connection has been established, one is typically left with a finite sampling of this observable.
+        </p>
+
+        <p>
+            A second step requires an understanding of the analytic properties of the observable in question.
+            Indeed, the <em>analytic S-matrix program</em> suggests that all the non-analytic features of a scattering observable are determined by physical principles and thus, as long as one is able to extract said principles, these features can be determined completely.
+            The S-matrix bootstrap attempts to determine completely scattering observables from this.
+            This is a very ambitious goal.
+            Lattice QCD instead is content with using this idea to remove the non-analytic aspects of the observable, leaving behind analytic functions that completely determine it.
+            By definition, these are described by simple classes of functions.
+            One then picks some parametrization of this analytic structure and attemps to fix it through a fitting procedure leveraging the samples one obtained in the previous step.
+        </p>
+            
+        <p>
+            The simplest of this is the elastic scattering of two particles.
+            In the seminal work of L&uuml;scher (for a modern account of this, please see the classic paper of <a href = "https://arxiv.org/pdf/hep-lat/0507006", target = "_blank"> Kim, Sachrajda and Sharpe</a>) he showed that, as long as considers
+        </p>
     </section>
 
     <section>
