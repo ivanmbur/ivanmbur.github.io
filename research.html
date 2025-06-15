@@ -40,113 +40,22 @@
         However, QCD is a strongly interacting quantum field theory.
         Therefore, the analytical tools we have available at the moment have not shown powerful enough to extract the information we need to understand the phenomena above.
         I thus enlist the help of computers to help me study this theory.
+        Since computers have a finite memory, we cannot fit all of spacetime in them (bummer?).
+        We must instead make due with a triangulation of it in terms of some finite graph we call a lattice.
+        The study of QCD on this lattice is called lattice QCD.
     </p>
-    <p>
-        If you think you might be interested in collaborating with me, do not hesitate to contact me at <a href = "mailto:ivan_burbano@berkeley.edu">ivan_burbano@berkeley.edu</a>.
-        I welcome everyone to reach out, including undergraduate students!
-    </p>
-
-
-    <section>
-        <h2>Introduction</h2>
-        <p>
-            In the following I will describe my research interests.
-            If you think you might be interested in collaborating with me, do not hesitate to contact me at <a href = "mailto:ivan_burbano@berkeley.edu">ivan_burbano@berkeley.edu</a>.
-            I welcome everyone to reach out, including undergraduate students!
-        </p>
-
-        <p>
-            The standard model of particle physics has been extremely successful at describing the elementary constituents of the universe.
-            However, we know it is incomplete.
-            An excellent retelling of the standard model, its achievements, and its limitations, can be found in <a href = "https://youtu.be/zNVQfWC_evg?si=FQtx5sMKR_UUws2J" target = "_blank">this lecture by David Tong</a>.
-        </p>
-
-        <p>
-            Quantum chromodynamics (QCD) is one of the sectors of this standard model.
-            It describes the nucleus of atoms, its constituents, and the ways in which they interact.
-            According to it, we have fundamental particles known as quarks and gluons.
-            When studied at the smalles of scales, the are essentially free roaming and (other than a small mass provided to the quarks by the Higgs field) massless.
-            This is known as asymptotic freedom.
-            But at large scales (and by large we mean scales that are about an order of magnitude smaller than the size of a proton!) due to largely mysterious quantum effects, these particles become strongly interacting.
-            This gives rise to complex collective phenomena, whose study lies far beyond the reach of current analytic methods.
-        </p>
-
-        <div class = "sourced_image">
-            <img src="images/proton.jpg">
-            <span class = "source">Photo taken from <a href = "https://www.energy.gov/science/articles/how-did-proton-get-its-spin" target = "_blank">this article</a> of the DOE</span>
-        </div>
-
-        <p>
-            One of my favorite examples of these is the mass of the proton.
-            At times we picture the proton with a caricature in which it is made of three quarks, which is extremely useful to describe some of its most basic properties.
-            One then might naively think that the mass of the proton might be the sum of the masses of three quarks.
-            This turns out to only account for about 1% of the actual mass of the proton.
-            Instead, a more accurate picture of the proton is much more complicated, with a constant soup of quarks and gluones popping in and out of existance due to quantum fluctuations and strongly interacting with one another.
-            Now we know that, even if the quarks were massless, the proton would still have around 90% of its mass.
-            A great account of this can be found in <a href = "https://physics.aps.org/articles/v11/118" target = "_blank">this article</a> by Andr&eacute; Walker-Loud.
-        </p>
-
-        <p>
-            A similar story can be said of many different phenomena of importance to our understanding of the universe:
-            <ul>
-                <li>On top of the proton, quarks and gluons can further coallese into a whole zoo of particles known as hadrons.
-                Nucleons are another familiar example.
-                But the list includes pions, Kaons, Lambdas, Sigmas, Xis, Deltas, and so on.
-                Comparison between the experimentally observed properties of these particles and theoretical predictions are fundamental tests of QCD.</li>
-                <li>A detailed understanding of QCD is fundamental to our view of nuclear reactions.
-                These are of course of practical importance, such as in the important quest for cleaner sources of energy.
-                Furthermore, they are crucial to our understanding of astrophysics.
-                A clear example is the fusion of protons, which is responsible for fueling stars.
-                Another example are neutron stars, which are made primarily of neutrons, and their core may contain an exotic state of matter known as the quark-gluon plasma.</li>
-                <li>A longstanding mystery is the asymmetry between the amount of matter and antimatter in the universe.
-                    As a solution of this problem, it has been proposed that the standard model may need to be modified so that neutrinos are Majorana particles.
-                    A lot of experimental effort is being done to search for neutrinoless double beta decay, which would prove this hypothesis.
-                    Incredibly accurate theoretical results are however required to do this, which involve a precise understanding of the QCD contributions to this process.</li>
-                <li>QCD further seems to allow the existence of exotic hadrons, made out of more than four quarks or with an important content of gluons.
-                For example, there have been experimental observations of particles that could be glueballs, particles consisting mostly of gluons and thus acquiring their mass purely through a quantum mechanism known as dynamical mass transmutation.
-                Determining whether these are in fact glueballs however requires us to be able to extract from QCD detailed predictions on the internal structure of these particles.</li>
-            </ul>
-
-        <p>
-            An analytic understanding of the phenomena mentioned above is far beyond our current reach.
-            This is evidence of undiscovered truths about the framework in which we describe the standard model, quantum field theory.
-            To date, the only known scheme to extract predictions directly from QCD is lattice QCD (LQCD).
-            This has been extremely successful already at understanding the masses of light hadrons as well as some of their structural properties.
-            However, understanding real-time processes, such as scattering, has proved much more difficult.
-            In traditional methods, LQCD requires the replacement of quantum fluctuations of the theory by thermal ones.
-            This heavily obscures time evolution.
-            My research is centered around solving this problem.
-        </p>
-
-    </section>
 
     <section>
         <h2>Traditional Lattice QCD</h2>
         <p>
-            While hard, there are some scattering observables that can be obtained through the traditional methods of lattice QCD.
-            The methodology involved in this can be roughly split into two steps.
-            Let us briefly describe them.
-        </p>
-
-        <p>
-            At the heart of the first step lies the fact that quantum systems on a finite-volume, such as the ones we have access to through computers, must have discrete energy levels (e.g. the Bohr quantization condition for the hydrogen atom).
-            One must then find a connection between these discrete energies, as well as other stationary properties of the states associated to them, to the scattering observables of interest.
-            Once this connection has been established, one is typically left with a finite sampling of this observable.
-        </p>
-
-        <p>
-            A second step requires an understanding of the analytic properties of the observable in question.
-            Indeed, the <em>analytic S-matrix program</em> suggests that all the non-analytic features of a scattering observable are determined by physical principles and thus, as long as one is able to extract said principles, these features can be determined completely.
-            The S-matrix bootstrap attempts to determine completely scattering observables from this.
-            This is a very ambitious goal.
-            Lattice QCD instead is content with using this idea to remove the non-analytic aspects of the observable, leaving behind analytic functions that completely determine it.
-            By definition, these are described by simple classes of functions.
-            One then picks some parametrization of this analytic structure and attemps to fix it through a fitting procedure leveraging the samples one obtained in the previous step.
-        </p>
-            
-        <p>
-            The simplest of this is the elastic scattering of two particles.
-            In the seminal work of L&uuml;scher (for a modern account of this, please see the classic paper of <a href = "https://arxiv.org/pdf/hep-lat/0507006", target = "_blank"> Kim, Sachrajda and Sharpe</a>) he showed that, as long as considers
+            Traditionally, lattice QCD is performed on classical computers.
+            These are not optimal at simulating quantum systems due to, for example, the sign problem.
+            To circumvent this, we instead replace QCD by a close cousin of it, Euclidean QCD, which is a statistical theory in which the quantum fluctuations have been replaced with thermal ones.
+            Rougly speaking this is done by making time in this theory an imaginary quantity (what?!).
+            While this has been extremely useful to study stationary properties of QCD, this poses severe problems to the study of real-time processes, such as the scattering of hadrons.
+            On top of this, due to the memory issues alluded to before, the lattice can only capture a, rather small, finite volume of spacetime.
+            This poses additional difficulties at the time of studying said scattering phenomena, for the initial and final hadrons involved in these processes only really make sense if they are allowed to be far enough from each other so as to not interact.
+            I am interested in the development and implementation of new dictionaries that allow us to circumvent this issue by mapping imaginary-time finite-volume quantities to scattering observables.
         </p>
     </section>
 
@@ -157,4 +66,8 @@
     <section>
         <h2>Previous Work</h2>
     </section>
+    <p>
+        If you think you might be interested in collaborating with me, do not hesitate to contact me at <a href = "mailto:ivan_burbano@berkeley.edu">ivan_burbano@berkeley.edu</a>.
+        I welcome everyone to reach out, including undergraduate students!
+    </p>
 </body>
