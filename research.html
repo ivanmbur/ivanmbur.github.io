@@ -1,94 +1,98 @@
 <!DOCTYPE html>
-<head>
-    <title>Ivan Burbano | Research</title>
-    <meta name = "description" content = "Research Interests of Ivan Mauricio Burbano Aldana">
-</head>
-<body>
-    <header>
-        <nav>
+<html>
+    <head>
+        <title>Ivan Burbano | Research</title>
+        <meta name = "description" content = "Research Interests of Ivan Mauricio Burbano Aldana">
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <header class = "main-header">
+            <nav>
+                <ul>
+                    <li><a href = "index.html" target = "_self">About</a></li>
+                    <li><a href = "research.html" target = "_self">Research</a></li>
+                    <!-- <li><a href = "teaching.html" target = "_self">Teaching</a></li> -->
+                    <!-- <li><a href = "service.html" target = "_self">Service</a></li> -->
+                </ul>
+                <hr>
+            </nav>
+            <h1>
+                Research
+            </h1>
+        </header>
+
+        <p>
+            I am interested in understanding the structure and behaviour of hadrons directly from the theory of quantum chromodynamics (QCD).
+            To see the importance of a solid understanding of Hadronic physics, let me mention a few physical sceneraios in which they play a key role:
             <ul>
-                <li><a href = "index.html" target = "_self">About</a></li>
-                <li><a href = "research.html" target = "_self">Research</a></li>
-                <!-- <li><a href = "teaching.html" target = "_self">Teaching</a></li> -->
-                <!-- <li><a href = "service.html" target = "_self">Service</a></li> -->
+                <li>Every atom in the universe! Protons and neutrons are examples of hadrons, and they are the building blocks of nuclei.</li>
+                <li>Nuclear reactions that could lead to cleaner energy sources! These are also fundamental to understand, say, the life-cycle of stars.</li>
+                <li>Neutron stars! These mysterious objects are of course mostly composed of neutrons.
+                    But deep within them there may be an exotic form of matter known as the quark-gluon plasma.
+                    Quarks and gluons are the constituent particles of all hadrons.</li>
+                <li>Neutrinoless double beta decay! The observation of this nuclear process would imply new physics beyond the current standard model of particle physics.
+                    It would signal that neutrinos are Majorana.
+                    This could be an explanation for the asymmetry between the amounts of matter and antimatter that we see in the universe (phew!).</li>
+                <li>Are there exotic hadrons?
+                    For example, it may be that there are massive particles made mostly out of gluons, known as glueballs.
+                    This is very intersting, considering that gluons are to the strong nuclear force as light is to electromagnetism.</li>
             </ul>
-            <hr>
-        </nav>
-        <h1>
-            Research
-        </h1>
-    </header>
-
-    <p>
-        I am interested in understanding the structure and behaviour of hadrons directly from the theory of quantum chromodynamics (QCD).
-        To see the importance of a solid understanding of Hadronic physics, let me mention a few physical sceneraios in which they play a key role:
-        <ul>
-            <li>Every atom in the universe! Protons and neutrons are examples of hadrons, and they are the building blocks of nuclei.</li>
-            <li>Nuclear reactions that could lead to cleaner energy sources! These are also fundamental to understand, say, the life-cycle of stars.</li>
-            <li>Neutron stars! These mysterious objects are of course mostly composed of neutrons.
-                But deep within them there may be an exotic form of matter known as the quark-gluon plasma.
-                Quarks and gluons are the constituent particles of all hadrons.</li>
-            <li>Neutrinoless double beta decay! The observation of this nuclear process would imply new physics beyond the current standard model of particle physics.
-                It would signal that neutrinos are Majorana.
-                This could be an explanation for the asymmetry between the amounts of matter and antimatter that we see in the universe (phew!).</li>
-            <li>Are there exotic hadrons?
-                For example, it may be that there are massive particles made mostly out of gluons, known as glueballs.
-                This is very intersting, considering that gluons are to the strong nuclear force as light is to electromagnetism.</li>
-        </ul>
-    </p>
-    <p>
-        However, QCD is a strongly interacting quantum field theory.
-        Therefore, the analytical tools we have available at the moment have not shown powerful enough to extract the information we need to understand the phenomena above.
-        I thus enlist the help of computers to help me study this theory.
-        Since computers have a finite memory, we cannot fit all of spacetime in them (bummer?).
-        We must instead make due with a triangulation of it in terms of some finite graph we call a lattice.
-        The study of QCD on this lattice is called lattice QCD.
-    </p>
-
-    <hr>
-
-    <section>
-        <h2>Traditional Lattice QCD</h2>
-        <p>
-            Traditionally, lattice QCD is performed on classical computers.
-            These are not optimal at simulating quantum systems due to, for example, the sign problem.
-            To circumvent this, we instead replace QCD by a close cousin of it, Euclidean QCD, which is a statistical theory in which the quantum fluctuations have been replaced with thermal ones.
-            Rougly speaking this is done by making time in this theory an imaginary quantity (what?!).
-            While this has been extremely useful to study stationary properties of QCD, this poses severe problems to the study of real-time processes, such as the scattering of hadrons.
-            On top of this, due to the memory issues alluded to before, the lattice can only capture a, rather small, finite volume of spacetime.
-            This poses additional difficulties at the time of studying said scattering phenomena, for the initial and final hadrons involved in these processes only really make sense if they are allowed to be far enough from each other so as to not interact.
-            I am interested in the development and implementation of new dictionaries that allow us to circumvent this issue by mapping imaginary-time finite-volume quantities to scattering observables.
         </p>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>Lattice QCD on Quantum Computers</h2>
         <p>
-            The advent of quantum computation has provided an alternative to the above.
-            With them it is for the first time feasible that we will be able to study real-time QCD directly without having to go through its Euclidean counterpart.
-            An important consequence of this is that, while the state of the art in the traditional side is the study of processes involving at most three incoming and outgoing particles, we have constructed mappings that would allow to compute scattering with an arbitrary number of particles using numerics obtainable through quantum computers.
-            I am interested in continuing the development and implementation of these quantum-specific mappings that will unlock scattering information unavailable on the traditional lattice.
-            I also work on the development and implementation of new formulations of QCD for which numerical exploration is more feasible given the current restrictions inherent in current quantum computers.
+            However, QCD is a strongly interacting quantum field theory.
+            Therefore, the analytical tools we have available at the moment have not shown powerful enough to extract the information we need to understand the phenomena above.
+            I thus enlist the help of computers to help me study this theory.
+            Since computers have a finite memory, we cannot fit all of spacetime in them (bummer?).
+            We must instead make due with a triangulation of it in terms of some finite graph we call a lattice.
+            The study of QCD on this lattice is called lattice QCD.
         </p>
-    </section>
 
-    <hr>
+        <hr>
 
-    <section>
-        <h2>Previous Work</h2>
+        <section>
+            <h2>Traditional Lattice QCD</h2>
+            <p>
+                Traditionally, lattice QCD is performed on classical computers.
+                These are not optimal at simulating quantum systems due to, for example, the sign problem.
+                To circumvent this, we instead replace QCD by a close cousin of it, Euclidean QCD, which is a statistical theory in which the quantum fluctuations have been replaced with thermal ones.
+                Rougly speaking this is done by making time in this theory an imaginary quantity (what?!).
+                While this has been extremely useful to study stationary properties of QCD, this poses severe problems to the study of real-time processes, such as the scattering of hadrons.
+                On top of this, due to the memory issues alluded to before, the lattice can only capture a, rather small, finite volume of spacetime.
+                This poses additional difficulties at the time of studying said scattering phenomena, for the initial and final hadrons involved in these processes only really make sense if they are allowed to be far enough from each other so as to not interact.
+                I am interested in the development and implementation of new dictionaries that allow us to circumvent this issue by mapping imaginary-time finite-volume quantities to scattering observables.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Lattice QCD on Quantum Computers</h2>
+            <p>
+                The advent of quantum computation has provided an alternative to the above.
+                With them it is for the first time feasible that we will be able to study real-time QCD directly without having to go through its Euclidean counterpart.
+                An important consequence of this is that, while the state of the art in the traditional side is the study of processes involving at most three incoming and outgoing particles, we have constructed mappings that would allow to compute scattering with an arbitrary number of particles using numerics obtainable through quantum computers.
+                I am interested in continuing the development and implementation of these quantum-specific mappings that will unlock scattering information unavailable on the traditional lattice.
+                I also work on the development and implementation of new formulations of QCD for which numerical exploration is more feasible given the current restrictions inherent in current quantum computers.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Previous Work</h2>
+            <p>
+                I used to work as a mathematical physicist, with a particular interest in the foundations of quantum field theory.
+                In this process I developed my interest for strongly coupled quantum field theories (such as QCD).
+                But I am still very much interested in the mathematical aspects of quantum field theory, particularly if they allow us to solve theories that are related to QCD.
+            </p>
+        </section>
+
+        <hr>
+
         <p>
-            I used to work as a mathematical physicist, with a particular interest in the foundations of quantum field theory.
-            In this process I developed my interest for strongly coupled quantum field theories (such as QCD).
-            But I am still very much interested in the mathematical aspects of quantum field theory, particularly if they allow us to solve theories that are related to QCD.
+            If you think you might be interested in collaborating with me, do not hesitate to contact me at <a href = "mailto:ivan_burbano@berkeley.edu">ivan_burbano@berkeley.edu</a>.
+            I welcome everyone to reach out, including undergraduate students!
         </p>
-    </section>
+    </body>
+</html>
 
-    <hr>
-
-    <p>
-        If you think you might be interested in collaborating with me, do not hesitate to contact me at <a href = "mailto:ivan_burbano@berkeley.edu">ivan_burbano@berkeley.edu</a>.
-        I welcome everyone to reach out, including undergraduate students!
-    </p>
-</body>
