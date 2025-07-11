@@ -21,6 +21,25 @@ body{
     height: 200px;
 }
 
+.toc {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.toc a{
+    text-decoration: none;
+    color: #888888;
+    display: block;
+    padding: 0.5em 0;
+    transition: color 0.2s ease;
+}
+
+.toc a:hover {
+  color: #333;
+  background-color: #eee;
+}
+
 .main-content{
     margin: 30px;
 }
