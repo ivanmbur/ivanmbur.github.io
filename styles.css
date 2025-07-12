@@ -33,11 +33,13 @@ body{
     display: block;
     padding: 0.5em 0;
     transition: color 0.2s ease;
+    padding: 10px;
 }
 
 .toc a:hover {
-  color: #333;
-  background-color: #eee;
+    color: #333;
+    background-color: #eee;
+    transform: translateX(10px);
 }
 
 .main-content{
